@@ -26,20 +26,29 @@
             <div class="warper">
                 <input id="login" type="text" class="text-field" placeholder="ФИО">
                 <input id="pass" type="text" class="text-field" placeholder="email">
-                <div>
+                <div class="radio_warper">
                     <label for="friend">От друзей</label>
                     <input type="radio" id="friend" name="radio">
                     <label for="internet">Из интернета</label>
                     <input type="radio" id="internet" name="radio">
 
                 </div>
+                
+                <select name="type" id="select">
+                    <option value="Жалоба">Жалоба</option>
+                    <option value="Предложение">Предложение</option>
+                </select>
                 <div class="agree-warper">
                     <input id="remember" type="checkbox">
-                    <label for="remember">Соглашаюсь с обработкой персональных данных</label>
-                    
+                    <label for="remember">Даю согласие на обработку персональных данных</label>     
                 </div>
+                <textarea name="text" id="text-area"></textarea>
+                <input type="file">
+                </div>
+                
+                
             </div>
-            <input type="submit" value="Войти" id="submit" onclick="alert('Авторизация')">
+            <input type="submit" value="Отправить" id="submit" onclick="alert('Отправлено')">
             
         </form>
     </main>
