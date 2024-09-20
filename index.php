@@ -20,7 +20,7 @@
             <button class="link">Портфолио</button>
             <button class="link">О себе</button>
             <button <?php 
-                $link = "./auth.html";
+                $link = "./auth.php";
                 $name = 'Авторизация';
                 $curentPage = true;
                 
@@ -32,7 +32,7 @@
                 echo $name
             ?></button>
             <button <?php 
-                $link = "./appeal.html";
+                $link = "./appeal.php";
                 $name = 'Обращение';
                 $curentPage = true;
                 
@@ -60,7 +60,7 @@
                 <?php 
                 $educ = ['Школа №78 г. Оренбург', 'Быковская школа с. Быково', 'Московский политех г. Москва'];
                 for ($i = 0; $i < 3; $i++)
-                    echo $educ[$i]?>
+                    echo $educ[$i]." "?>
             </p>
         </div>
     </main>

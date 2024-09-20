@@ -12,11 +12,44 @@
     <header>
         <p id="name">Долгов Дмитрий</p>
         <div id="links">
-            <button class="link" onclick="window.location.href = './index.html'">Главная</button>
+        <button <?php 
+                $link = "./index.php";
+                $name = 'Главная';
+                $curentPage = true;
+                
+                if ($curentPage)
+                    echo 'class="link" ';
+                echo 'onclick="window.location.href =\''.$link.'\'"';
+
+            ?>><?php 
+                echo $name
+            ?></button>
             <button class="link">Портфолио</button>
             <button class="link">О себе</button>
-            <button class="link" onclick="window.location.href = './auth.html'">Авторизация</button>
-            <button class="link" onclick="window.location.href = './appeal.html'">Обращение</button>
+            <button <?php 
+                $link = "./auth.php";
+                $name = 'Авторизация';
+                $curentPage = true;
+                
+                if ($curentPage)
+                    echo 'class="link" ';
+                echo 'onclick="window.location.href =\''.$link.'\'"';
+
+            ?>><?php 
+                echo $name
+            ?></button>
+            <button <?php 
+                $link = "./appeal.php";
+                $name = 'Обращение';
+                $curentPage = true;
+                
+                if ($curentPage)
+                    echo 'class="link" ';
+                echo 'onclick="window.location.href =\''.$link.'\'"';
+
+            ?>><?php 
+                echo $name
+            ?></button>
         </div>
         
     </header>
@@ -37,7 +70,7 @@
         </form>
     </main>
     <footer>
-        <p id="email">e-mail: d.dolgovo4@yandex.ru; телефон +7 (966) 145-65-55</p>
+        <p id="email"><?php echo date("Сформированно d-m-Y в H:i:s"); ?></p>
     </footer>
     
 </body>
